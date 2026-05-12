@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/journal-entry.schema.json",
+  "title": "JournalEntry",
+  "type": "object",
+  "required": ["timestamp", "minutes"],
+  "properties": {
+    "timestamp": { "type": "string", "description": "ISO-8601 timestamp with timezone" },
+    "lane": { "type": "string" },
+    "source": { "type": "string", "description": "e.g. hermes-cli, telegram" },
+    "triage": {
+      "type": "object",
+      "properties": {
+        "decisions_pending": { "type": "array", "items": { "type": "string" }, "maxItems": 3 },
+        "next_actions": { "type": "array", "items": { "type": "string" }, "maxItems": 3 }
+      },
+      "additionalProperties": false
+    },
+    "minutes": {
+      "type": "object",
+      "required": ["a_pointed"],
+      "properties": {
+        "a_pointed": { "type": "string" },
+        "b_reflection": { "type": "string" },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": { "type": "string" },
+              "value": { "type": "string" }
+            },
+            "required": ["kind", "value"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ai_signature": {
+      "type": "object",
+      "properties": {
+        "model": { "type": "string" },
+        "agent": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -3,17 +3,20 @@
 This folder is a *public-shareable* packaging of the “agentic journaling / session minutes” workflow.
 
 Design goals:
-- Local-first: Obsidian is the system of record
+- Local-first: you own the artifacts (Obsidian is an optional preset, not a dependency)
 - Triage-first: keep a small, current top section (Decisions + Next actions)
-- Append-only minutes: add new “session minutes” blocks, do not rewrite the user’s prose
+- Append-only minutes: add new “session minutes” blocks, do not rewrite your prose
+- Backend-optional: flat files, Obsidian, JSONL now; SQLite/Postgres/canvas planned
 - Privacy-safe by default: templates avoid absolute paths, names, emails, and other PII
 
 ## What’s included
 
-- `skill/` — a publishable skill template (`journal`), with placeholders for vault path
-- `examples/` — redacted daily-note example(s)
-- `docs/` — proposal + UX spec + safety boundaries
-- `marketing/` — banner/social card assets (SVG + optional PNG)
+- `skill/` — publishable skill template (`journal`), backend-optional (flat files default; Obsidian preset)
+- `examples/` — synthetic/redacted daily-note examples
+- `docs/` — options tree, feature matrix, proposal, UX spec, privacy, export/redaction
+- `templates/` — daily note templates
+- `schemas/` — JSON schema for JSONL/event backends
+- `marketing/` — banner/social card assets (SVG)
 
 ## Install (local)
 

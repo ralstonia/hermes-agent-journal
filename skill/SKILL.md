@@ -2,7 +2,7 @@
 name: journal
 description: "Append session minutes + auto-promote triage into daily journal artifacts (triage-first). Flat files by default; Obsidian is an optional preset. Includes both factual (A) and reflective (B) journaling."
 version: 0.2.0
-author: Hermes Agent
+author: Ram Narayanan (ralstonia) + Hermes Agent
 license: MIT
 metadata:
   hermes:

@@ -1,0 +1,61 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily note anatomy">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#0b1226"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <style>
+      .title { font: 700 28px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #e5e7eb; }
+      .label { font: 700 18px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #e5e7eb; }
+      .mono  { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; fill: #cbd5e1; }
+      .muted { font: 500 14px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #94a3b8; }
+      .pill  { font: 700 12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #0b1226; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" fill="url(#bg)"/>
+  <text x="60" y="70" class="title">Daily note anatomy: triage-first + append-only minutes + block anchors</text>
+
+  <!-- File box -->
+  <g filter="url(#shadow)">
+    <rect x="120" y="110" width="960" height="440" rx="22" fill="#0f172a" stroke="#22304f"/>
+  </g>
+
+  <!-- Header / filename -->
+  <text x="150" y="150" class="mono">&lt;JOURNAL_ROOT&gt;/YYYY-MM-DD.md</text>
+
+  <!-- Triage section -->
+  <rect x="150" y="175" width="900" height="150" rx="16" fill="#0b1226" stroke="#22304f"/>
+  <text x="175" y="210" class="label">Triage (small, current)</text>
+  <text x="175" y="238" class="mono">Decisions pending</text>
+  <text x="175" y="262" class="mono">- Decide …  ^d-YYYYMMDD-01</text>
+  <text x="175" y="292" class="mono">Next actions (owner + DoD)</text>
+  <text x="175" y="316" class="mono">- Hermes: … DoD: …  ^a-YYYYMMDD-01</text>
+
+  <!-- Pills -->
+  <g>
+    <rect x="900" y="192" width="120" height="22" rx="11" fill="#a78bfa"/>
+    <text x="913" y="208" class="pill">MAX 3+3</text>
+
+    <rect x="900" y="222" width="150" height="22" rx="11" fill="#34d399"/>
+    <text x="912" y="238" class="pill">LINKABLE</text>
+  </g>
+
+  <!-- Separator -->
+  <text x="175" y="350" class="muted">----</text>
+
+  <!-- Minutes section -->
+  <rect x="150" y="370" width="900" height="155" rx="16" fill="#0b1226" stroke="#22304f"/>
+  <text x="175" y="405" class="label">Session minutes (append-only)</text>
+  <text x="175" y="433" class="mono">A) Pointed minutes</text>
+  <text x="175" y="457" class="mono">- Decision: …  ^m-YYYYMMDD-01</text>
+  <text x="175" y="485" class="mono">B) Reflection (3–7 lines)</text>
+  <text x="175" y="510" class="mono">^AI YYYY-MM-DD HH:MM:SS TZ — Hermes (model)</text>
+
+  <!-- Callout arrow to anchors -->
+  <path d="M1030 275 C1100 285, 1100 360, 1015 385" stroke="#94a3b8" stroke-width="3" fill="none"/>
+  <text x="880" y="560" class="muted">Anchors enable weekly/monthly reviews to cite exact source blocks.</text>
+</svg>

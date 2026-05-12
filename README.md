@@ -6,6 +6,10 @@ Community package for Hermes Agent: triage-first session minutes into local mark
 
 ![Flow diagram](docs/flow-diagram.svg)
 
+![Daily note anatomy](docs/daily-note-anatomy.svg)
+
+![Weekly review linking](docs/weekly-review-linking.svg)
+
 This folder is a *public-shareable* packaging of the “agentic journaling / session minutes” workflow.
 
 Design goals:

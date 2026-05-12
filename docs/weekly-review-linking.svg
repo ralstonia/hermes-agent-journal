@@ -1,0 +1,53 @@
+<svg width="1200" height="620" viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Weekly review linking back to sources">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#0b1226"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <style>
+      .title { font: 700 28px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #e5e7eb; }
+      .label { font: 700 18px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #e5e7eb; }
+      .mono  { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas; fill: #cbd5e1; }
+      .muted { font: 500 14px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #94a3b8; }
+      .pill  { font: 700 12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto; fill: #0b1226; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" fill="url(#bg)"/>
+  <text x="60" y="70" class="title">Weekly review: every claim links back to a source block</text>
+
+  <!-- Weekly review file -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="120" width="520" height="420" rx="22" fill="#0f172a" stroke="#22304f"/>
+  </g>
+  <text x="120" y="160" class="mono">weekly/YYYY-WW.md</text>
+  <text x="120" y="205" class="label">Top decisions</text>
+  <text x="120" y="235" class="mono">- Decide backend: flat files</text>
+  <text x="120" y="260" class="mono">  (source: [[YYYY-MM-DD]]#^d-YYYYMMDD-01)</text>
+
+  <text x="120" y="310" class="label">Top actions</text>
+  <text x="120" y="340" class="mono">- Ship docs + templates</text>
+  <text x="120" y="365" class="mono">  (source: [[YYYY-MM-DD]]#^a-YYYYMMDD-01)</text>
+
+  <rect x="120" y="410" width="155" height="22" rx="11" fill="#34d399"/>
+  <text x="132" y="426" class="pill">AUDITABLE</text>
+
+  <!-- Daily note file -->
+  <g filter="url(#shadow)">
+    <rect x="680" y="180" width="430" height="290" rx="22" fill="#0f172a" stroke="#22304f"/>
+  </g>
+  <text x="710" y="220" class="mono">YYYY-MM-DD.md</text>
+  <text x="710" y="255" class="label">Triage</text>
+  <text x="710" y="285" class="mono">- Decide backend…  ^d-YYYYMMDD-01</text>
+  <text x="710" y="325" class="label">Minutes</text>
+  <text x="710" y="355" class="mono">- Decision: …  ^m-YYYYMMDD-01</text>
+
+  <!-- Linking arrow -->
+  <path d="M610 260 C650 260, 650 260, 680 285" stroke="#94a3b8" stroke-width="3" fill="none"/>
+  <path d="M610 365 C650 365, 650 365, 680 285" stroke="#94a3b8" stroke-width="3" fill="none"/>
+
+  <text x="60" y="590" class="muted">This mirrors Logseq’s block reference idea: stable block IDs enable deep links and backlinks.</text>
+</svg>

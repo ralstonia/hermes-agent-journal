@@ -1,4 +1,6 @@
-# Hermes /journal — GitHub-ready package (privacy-safe)
+# Hermes Agent Journal — backend-optional /journal (privacy-safe)
+
+Community package for Hermes Agent: triage-first session minutes into local markdown (flat files by default).
 
 This folder is a *public-shareable* packaging of the “agentic journaling / session minutes” workflow.
 

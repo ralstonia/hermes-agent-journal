@@ -1,4 +1,4 @@
-# Install (local) — Hermes /journal skill
+# Install (local) — Hermes Agent /journal skill
 
 This guide installs the `journal` skill on a local machine.
 

@@ -57,6 +57,10 @@ More details: `docs/INSTALL.md`
   - `<PERSON>`
   - `<ID>`
 
+## Release process
+
+See: `docs/RELEASING.md`
+
 ## License
 
 MIT — see `LICENSE`.

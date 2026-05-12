@@ -20,11 +20,11 @@ Design goals:
 
 ## Install (local)
 
-This is meant as a *shareable template*. For your own machine, you’ll likely want to set your vault root.
+This is meant as a *shareable template*. For your own machine, you’ll set your `<JOURNAL_ROOT>` (an ordinary folder path).
 
 Recommended approach:
 1) Copy the skill to your Hermes skills folder.
-2) Set the vault root in your own local configuration/memory (not in the public template).
+2) Set `<JOURNAL_ROOT>` privately (config/memory/private fork).
 
 See: `docs/INSTALL.md`
 

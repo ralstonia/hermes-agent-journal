@@ -88,6 +88,13 @@ Promote from minutes → triage (top of file):
   - prefer items that unblock multiple others
   - prefer “today/next” over “someday”
 
+4) Block IDs (for cross-linking derived views)
+- Every triage bullet MUST end with a stable block anchor so weekly/monthly reviews can link back precisely.
+- Use this convention:
+  - decisions: `^d-YYYYMMDD-01`
+  - actions: `^a-YYYYMMDD-01`
+- If you promote a minutes bullet into triage, preserve (or add) the anchor on the triage line.
+
 ## Minutes block format (append-only)
 
 Append to the end of the file:
@@ -125,11 +132,11 @@ B) Reflection
 Triage
 
 Decisions pending
-- Decide whether “/journal” should be skill-only or also a native slash-command.
+- Decide whether “/journal” should be skill-only or also a native slash-command. ^d-20260513-01
 
 Next actions (owner + DoD)
-- Hermes: Draft proposal doc (1 page) with UX + safety boundaries. DoD: saved under `journaling/docs/`.
-- User: Pick preferred naming (“journal” vs “minutes”). DoD: decision written in triage.
+- Hermes: Draft proposal doc (1 page) with UX + safety boundaries. DoD: saved under `journaling/docs/`. ^a-20260513-01
+- User: Pick preferred naming (“journal” vs “minutes”). DoD: decision written in triage. ^a-20260513-02
 
 ----
 

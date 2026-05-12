@@ -24,7 +24,7 @@ Prompts the user (if needed) for the minimal “what happened” content, then w
 - Shows a diff preview (ideal for core command)
 
 ## Interaction rules
-- If the agent cannot resolve the Obsidian vault root, it asks.
+- If the agent cannot resolve `<JOURNAL_ROOT>`, it asks.
 - The agent never guesses paths.
 - The agent never “fixes writing.” It only appends and lightly edits triage bullets.
 

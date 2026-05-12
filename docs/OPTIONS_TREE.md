@@ -7,7 +7,7 @@ A) Flat files (default)
 - Human-readable, git-friendly, Obsidian-compatible (but not required)
 
 B) Obsidian preset (same as flat files)
-- Daily markdown files live in your vault root
+- Daily markdown files live in your vault root (i.e., set `<JOURNAL_ROOT>` to the vault root)
 - Same file format; just a convention + UX preference
 
 C) JSONL events

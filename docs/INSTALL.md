@@ -9,19 +9,25 @@ Copy `journaling/skill/SKILL.md` into your Hermes skills directory.
 Example:
 - Destination: `~/.hermes/skills/note-taking/journal/SKILL.md`
 
-## 2) Set your Obsidian vault root (private)
+## 2) Set your journal root (private)
 
-The public template intentionally uses `<OBSIDIAN_VAULT_ROOT>`.
+V1 default backend is flat files: `<JOURNAL_ROOT>/YYYY-MM-DD.md`.
+
+The public template intentionally uses `<JOURNAL_ROOT>`.
 
 Choose ONE private way to provide it:
 
 A) Put it in your own local skill file (private fork)
-- Replace `<OBSIDIAN_VAULT_ROOT>` with your actual vault path
+- Replace `<JOURNAL_ROOT>` with an absolute folder path on your machine
 - Do NOT publish that file.
 
-B) Keep skill public-safe, but teach the agent the vault path via memory
-- Tell Hermes once: “My Obsidian vault root is: /abs/path/to/vault”
+B) Keep skill public-safe, but teach the agent the path via memory
+- Tell Hermes once: “My journal root is: /abs/path/to/journal”
 - Hermes should then read that from memory for all future `/journal` calls.
+
+### Obsidian preset (optional)
+
+If you use Obsidian daily notes, set `<JOURNAL_ROOT>` to your vault root. (Same file format; Obsidian is just the viewer.)
 
 ## 3) Try it
 

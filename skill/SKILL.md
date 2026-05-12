@@ -1,6 +1,6 @@
 ---
 name: journal
-description: "Append session minutes + auto-promote triage into Obsidian daily note (triage-first). Includes both factual (A) and reflective (B) journaling."
+description: "Append session minutes + auto-promote triage into daily journal artifacts (triage-first). Flat files by default; Obsidian is an optional preset. Includes both factual (A) and reflective (B) journaling."
 version: 0.2.0
 author: Hermes Agent
 license: MIT
@@ -9,28 +9,35 @@ metadata:
     tags: [obsidian, journaling, daily-notes, minutes, triage, local-first]
 ---
 
-# /journal — Agentic journaling into Obsidian Daily Notes
+# /journal — Agentic journaling (backend-optional)
+
+V1 default backend: flat files (daily markdown).
+Obsidian is an optional preset (same file format, different root).
 
 Use when the user types `/journal` (or asks to journal / log session minutes).
 
 ## Prime directive
 
-- Obsidian is the system-of-record.
-- Preserve the user’s original prose. Do NOT rewrite their existing daily note content.
+- You own the artifacts (local-first). Obsidian is optional.
+- Preserve the user’s original prose. Do NOT rewrite their existing note content.
 - Make changes in two forms only:
   1) append a new “Session minutes (Hermes)” block
   2) small, reviewable edits to the top “Triage” section
 
-## Target vault + daily note path
+## Backend (V1): flat files (daily markdown)
 
-Assume the daily note lives at the vault root:
-- Vault root: `<OBSIDIAN_VAULT_ROOT>`
+Assume the daily note lives at:
+- Journal root: `<JOURNAL_ROOT>`
 - Daily note filename: `YYYY-MM-DD.md` in that directory
 
 Rules:
-- Vault root is user-specific and must not be guessed.
+- Journal root is user-specific and must not be guessed.
 - If unknown, ask the user.
 - In public examples, always use placeholders.
+
+### Obsidian preset (optional)
+
+If the user uses Obsidian daily notes, `<JOURNAL_ROOT>` can be their vault root. (Same files, same format.)
 
 ## Triage-first header (create if missing)
 

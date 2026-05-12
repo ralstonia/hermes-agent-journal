@@ -11,7 +11,7 @@ Public docs and examples must not include:
 - API keys / tokens
 
 Use placeholders:
-- `<OBSIDIAN_VAULT_ROOT>`
+- `<JOURNAL_ROOT>`
 - `<PROJECT_ROOT>`
 - `<LINK>`
 - `<PERSON>`
@@ -19,7 +19,7 @@ Use placeholders:
 
 ## Behavior constraints (agent)
 
-- Never guess the vault root.
+- Never guess the journal root.
 - Do not rewrite user prose.
 - Only append minutes blocks.
 - Only update triage section with minimal, reviewable edits.

@@ -33,8 +33,8 @@ V1 explicitly does NOT implement SQLite/Postgres yet, but documents them as V2 p
 
 3) Updated skill template (GitHub-safe)
 - `skill/SKILL.md` updated to support backend selection:
-  - `<JOURNAL_ROOT>` for flat files
-  - `<OBSIDIAN_VAULT_ROOT>` for Obsidian preset
+  - `<JOURNAL_ROOT>` for flat files (default)
+  - Obsidian preset: set `<JOURNAL_ROOT>` to your vault root
 
 4) Minimal export/redaction guidance
 - `docs/EXPORT_AND_REDACTION.md` (no code in V1)
